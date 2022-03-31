@@ -1,0 +1,14 @@
+{
+  "name": "memes",
+  "version": "1.0.0",
+  "description": "memes",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "author": "Shivam Sen",
+  "license": "MIT"
+}
