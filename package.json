@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "the-meme-maker",
+  "version": "1.0.0",
+  "description": "the meme maker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helloworld910/the-meme-maker.git"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "author": "Shivam Sen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Helloworld910/the-meme-maker/issues"
+  },
+  "homepage": "https://github.com/Helloworld910/the-meme-maker#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pexels": "^1.3.0"
+  }
+}
