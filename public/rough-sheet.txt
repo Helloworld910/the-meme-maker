@@ -1,0 +1,35 @@
+
+if(rotYH[2][0]<rotYA[2][0]){
+  fill(210,02,150)
+  beginShape();
+  vertex(proE[0][0]*200,proE[1][0]*200);
+  vertex(proF[0][0]*200,proF[1][0]*200);
+  vertex(proG[0][0]*200,proG[1][0]*200);
+  vertex(proH[0][0]*200,proH[1][0]*200);
+  endShape(CLOSE);
+  fill(123,02,150)
+  beginShape();
+  vertex(proA[0][0]*200,proA[1][0]*200);
+  vertex(proB[0][0]*200,proB[1][0]*200);
+  vertex(proC[0][0]*200,proC[1][0]*200);
+  vertex(proD[0][0]*200,proD[1][0]*200);
+  endShape(CLOSE);
+
+}
+else{
+  fill(123,02,150)
+  beginShape();
+  vertex(proA[0][0]*200,proA[1][0]*200);
+  vertex(proB[0][0]*200,proB[1][0]*200);
+  vertex(proC[0][0]*200,proC[1][0]*200);
+  vertex(proD[0][0]*200,proD[1][0]*200);
+  endShape(CLOSE);
+
+  fill(210,02,150)
+  beginShape();
+  vertex(proE[0][0]*200,proE[1][0]*200);
+  vertex(proF[0][0]*200,proF[1][0]*200);
+  vertex(proG[0][0]*200,proG[1][0]*200);
+  vertex(proH[0][0]*200,proH[1][0]*200);
+  endShape(CLOSE);
+}

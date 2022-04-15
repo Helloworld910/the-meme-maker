@@ -11,7 +11,6 @@ var greenF
 // the frame rate (frames per second)
 // the canvas capturer instance
 
-
 function preload() {
   // Get the most recent earthquake in the database
 	img = loadImage('https://images.pexels.com/photos/2903325/pexels-photo-2903325.jpeg'); // Load the image

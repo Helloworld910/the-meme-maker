@@ -1,67 +1,25 @@
-var img
 var song
-var d = 20
-var amplitude
-var fftOb
-var angle
-var redF
-var blueF
-var greenF
 
 // the frame rate (frames per second)
 // the canvas capturer instance
 
-
 function preload() {
   // Get the most recent earthquake in the database
-	img = loadImage('https://images.pexels.com/photos/2903325/pexels-photo-2903325.jpeg'); // Load the image
 	song = loadSound("chopinPro.wav")
 
 }
 
 
 function setup() {
-	createCanvas(1080/4, 1920/4)
+	createCanvas(,)
 	background(250,116,150)
-	console.log("song duration:", song.duration())
-	console.log("song sampling rate", song.sampleRate())
-	console.log("number of frames in song", song.frames())
-	bubble = new Bubble((1080/4)/2,(1920/4)/2, 20,233,170,130 )
-	button = createButton("Play")
-	button.mousePressed(songToggle)
-	amplitude = new p5.Amplitude(0.1)
-	fftOb = new p5.FFT(0.99, 16)
 	// put setup code here
 }
 
 function draw() {
 	background(250, 116, 150)
-	translate((1080/4)/2, height)
-	if(song.isPlaying()){
-		var spectrum = fftOb.analyze()
-		var redF = spectrum[1]
-		var greenF = spectrum[3]
-		var blueF = spectrum[6]
-		var finalRed = map(redF, 0, 255, 80,160)
-		var finalGreen = map(greenF, 0, 255, 20,30)
-		var finalBlue = map(blueF, 0, 30, 40,70)
-		background(finalRed,finalGreen,finalBlue)
-	}
-	branch(100)
 
 }
-
-function songToggle(){
-	if(song.isPlaying()){
-		song.stop()
-	}
-	else{
-			song.play()
-		}
-	}
-
-
-
 
 
 
