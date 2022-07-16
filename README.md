@@ -1,2 +1,2 @@
 # the-meme-maker
-The name is pretty self explanatory I feel.
+This repository contains the code for my p5 sketches.

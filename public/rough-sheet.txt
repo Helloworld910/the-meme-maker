@@ -1,3 +1,50 @@
+RACIAL ATTITUDES
+
+Benassi Caterina and Shivam Sen
+
+
+Social and Political Attitudes
+
+Università degli Studi di Milano
+
+ 2021-2022
+
+
+
+
+imWidth = floor(img.width/3)
+imHeight = floor(img.height/3)
+img.resize(imWidth,imHeight)
+img.loadPixels()
+
+for(var y = 0; y < imHeight; y++){
+  for(var x = 0; x < imWidth; x++){
+    var index = (x + y * imWidth)*4
+    var r = img.pixels[index+0]
+    var g = img.pixels[index+1]
+    var b = img.pixels[index+2]
+    var a = img.pixels[index+3]
+    var bright = (r+g+b)/3
+
+    if(a>30){
+      var picAttri = [x,y,r,g,b,a]
+      picData.push(picAttri)
+    }
+  }
+}
+for(var c = 0;c<picData.length;c++){
+  flock[c] = new Boid("normaL",picData[c][0],picData[c][1],picData[c][2],picData[c][3],picData[c][4],picData[c][5])
+}
+
+
+
+
+
+//Above is presentation.js roughwork
+
+
+
+
 
 if(rotYH[2][0]<rotYA[2][0]){
   fill(210,02,150)
@@ -33,3 +80,9 @@ else{
   vertex(proH[0][0]*200,proH[1][0]*200);
   endShape(CLOSE);
 }
+
+
+
+#Good de Jong params
+
+1) 1.9446686684375907 2.9760338229418943 1.7507087108120833 -1.1262771405096266
