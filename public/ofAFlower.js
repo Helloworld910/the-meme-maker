@@ -1,8 +1,11 @@
 var song
 var button1
 var button
-deltaT = 0
 var startOn = false
+
+var rootX, rootY, satAx, satAy, satBx, satBy, satCx, satCy
+var angleA = 0
+var angleB = 0
 
 var capturer = new CCapture({
 	framerate: 24,
@@ -20,7 +23,7 @@ function preload() {
 
 
 function setup() {
-	createCanvas(360, 540)
+	createCanvas(360*2, 540*2)
 	colorMode(HSB, 239,239,239,100)
 	background(03,4,200)
 	button = createButton("Start Reco")
@@ -32,11 +35,32 @@ function setup() {
 }
 
 function draw() {
+  //strokeWeight(21)
+  //stroke(0,0,50)
+  //noFill()
+  //rect(0,0,width,height,21)
 
-  if(startOn){
+	if(startOn){
   }
+	rootX = width/2
+	rootY = height/2
+	satAx = 150*2*sin(angleA)+rootX
+	satAy = 150*2*cos(angleA)+rootY
+	satBx = 80*2*-1*cos(angleA)+rootX
+	satBy = 80*2*-1*sin(angleA)+rootY
+	satCx = 70*2*sin(angleB)+satBx
+	satCy = 70*2*cos(angleB)+satBy
+	stroke(239-(angleB%239),200,200,100)
+	//point(rootX, rootY)
+
+	//point(satAx, satAy)
+	//point(satBx, satBy)
+	strokeWeight(5)
+	line(30*2*sin(angleB-0.4)+satBx, 30*2*cos(angleB-0.4)+satBy, satCx, satCy)
+
+	angleA+=0.01
+	angleB+=0.1
   //
-	deltaT += 1
   capturer.capture(document.getElementById('defaultCanvas0'));
 }
 
