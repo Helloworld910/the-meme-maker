@@ -1,5 +1,57 @@
 
 Color codes -
+<palette>
+<color name='Illustration-1' rgb='F28B0C' r='242' g='138' b='12' />
+<color name='Illustration-2' rgb='F27405' r='242' g='115' b='4' />
+<color name='Illustration-3' rgb='F21616' r='242' g='21' b='21' />
+<color name='Illustration-4' rgb='A61B1B' r='165' g='26' b='26' />
+<color name='Illustration-5' rgb='262626' r='38' g='38' b='38' />
+</palette>
+
+/* Color Theme Swatches in Hex */
+$Illustration-1-hex: #F28B0C;
+$Illustration-2-hex: #F27405;
+$Illustration-3-hex: #F21616;
+$Illustration-4-hex: #A61B1B;
+$Illustration-5-hex: #262626;
+
+/* Color Theme Swatches in RGBA */
+$Illustration-1-rgba: rgba(242,138,12, 1);
+$Illustration-2-rgba: rgba(242,115,4, 1);
+$Illustration-3-rgba: rgba(242,21,21, 1);
+$Illustration-4-rgba: rgba(165,26,26, 1);
+$Illustration-5-rgba: rgba(38,38,38, 1);
+
+/* Color Theme Swatches in HSLA */
+$Illustration-1-hsla: hsla(33, 90, 49, 1);
+$Illustration-2-hsla: hsla(28, 96, 48, 1);
+$Illustration-3-hsla: hsla(0, 89, 51, 1);
+$Illustration-4-hsla: hsla(0, 72, 37, 1);
+$Illustration-5-hsla: hsla(0, 0, 15, 1);
+
+
+
+
+/* Color Theme Swatches in Hex */
+$Graphic-Design-1-hex: #F2F2F2;
+$Graphic-Design-2-hex: #D9D9D9;
+$Graphic-Design-3-hex: #A6A6A6;
+$Graphic-Design-4-hex: #737373;
+$Graphic-Design-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$Graphic-Design-1-rgba: rgba(242,242,242, 1);
+$Graphic-Design-2-rgba: rgba(216,216,216, 1);
+$Graphic-Design-3-rgba: rgba(165,165,165, 1);
+$Graphic-Design-4-rgba: rgba(114,114,114, 1);
+$Graphic-Design-5-rgba: rgba(12,12,12, 1);
+
+/* Color Theme Swatches in HSLA */
+$Graphic-Design-1-hsla: hsla(0, 0, 95, 1);
+$Graphic-Design-2-hsla: hsla(0, 0, 85, 1);
+$Graphic-Design-3-hsla: hsla(0, 0, 65, 1);
+$Graphic-Design-4-hsla: hsla(0, 0, 45, 1);
+$Graphic-Design-5-hsla: hsla(0, 0, 5, 1);
 
 
 RACIAL ATTITUDES
